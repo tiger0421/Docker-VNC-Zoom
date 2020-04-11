@@ -9,7 +9,7 @@ This container has NOT installed zoom yet.
 Pull and Launch a container
 ```
 docker pull tiger0421/docker_vnc_zoom
-docker run --rm -p 6080:80 -p 5900:5900 docker_vnc_zoom:latest
+docker run --rm  --privileged -p 6080:80 -p 5900:5900 -v /dev/video0:/dev/video0 --volume /dev/dsp:/dev/dsp:rw docker_vnc_zoom:latest
 ```
 Run the command inside a container to install Zoom(in the first time only).
 ```
