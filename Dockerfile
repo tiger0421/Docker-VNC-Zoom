@@ -7,8 +7,9 @@ RUN apt update \
  && apt clean && rm -rf /var/lib/apt/lists/*
 
 # Dwonload & install zoom
-ARG ZOOM_URL=https://zoom.us/client/latest/zoom_amd64.deb
-RUN curl -sSL $ZOOM_URL -o /tmp/zoom_setup.deb \
+ENV ZOOM_URL=https://zoom.us/client/latest/zoom_amd64.deb
+RUN echo "curl -sSL $ZOOM_URL -o /tmp/zoom_setup.deb \
  && apt install /tmp/zoom_setup.deb \
  && apt -f install \
- && rm /tmp/zoom_setup.deb && rm -rf /var/lib/apt/lists/*
+ && rm /tmp/zoom_setup.deb && rm -rf /var/lib/apt/lists/*" > zoom_install.sh \
+ && chmod 777 zoom_install.sh
