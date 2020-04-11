@@ -7,7 +7,7 @@ Launch a container
 ```
 docker run --rm -p 6080:80 -p 5900:5900 tiger0421/docker_vnc_zoom
 ```
-Execute command at Terminal in container.
+Run the command inside a container.
 ```
 zoom
 ```
