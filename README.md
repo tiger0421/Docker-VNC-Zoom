@@ -3,7 +3,7 @@ Zoom on Docker
 This image based on [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/dorowu/ubuntu-desktop-lxde-vnc).
 
 ## Caution
-This container has NOT install zoom yet.
+This container has NOT installed zoom yet.
 
 ## Usage
 Pull a container
