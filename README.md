@@ -4,7 +4,7 @@ This image based on [dorowu/ubuntu-desktop-lxde-vnc](https://hub.docker.com/r/do
 
 ## Usage
 ```
-docker run --rm -p 6080:80 -p 5900:5900 tiger0421/Docker-VNC-Zoom
+docker run --rm -p 6080:80 -p 5900:5900 tiger0421/docker_vnc_zoom
 ```
 
 ## ENVIRONMENT
