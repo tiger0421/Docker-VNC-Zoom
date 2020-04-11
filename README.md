@@ -7,7 +7,7 @@ Build a container
 ```
 mkdir docker_vnc_zoom
 curl https://raw.githubusercontent.com/tiger0421/Docker-VNC-Zoom/master/Dockerfile > ./docker_vnc_zoom/Dockerfile
-docker build -t docker_vnc_zoom .
+docker build -t docker_vnc_zoom ./docker_vnc_zoom/
 ```
 
 Launch a container
