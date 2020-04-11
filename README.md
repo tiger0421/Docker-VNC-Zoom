@@ -33,6 +33,11 @@ curl https://raw.githubusercontent.com/tiger0421/Docker-VNC-Zoom/master/Dockerfi
 docker build -t docker_vnc_zoom -f ./docker_vnc_zoom/Dockerfile .
 ```
 
+Run zoom command inside a container
+```
+zoom
+```
+
 ## ENVIRONMENT
 - RESOLUTION
 - USER
